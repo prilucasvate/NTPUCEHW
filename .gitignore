@@ -5,3 +5,10 @@
 *.so
 *.dll
 *.lib
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
