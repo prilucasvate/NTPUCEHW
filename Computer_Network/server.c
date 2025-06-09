@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//this is server part of bonus part 
 
 int intp[100]={0};
 int j,oj;

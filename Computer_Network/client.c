@@ -5,7 +5,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
- //this is bonus part 
+ //this is client part of bonus part 
  
 int main(int argc, char **argv) {
     struct sockaddr_in server;
@@ -16,7 +16,6 @@ int main(int argc, char **argv) {
     server.sin_family = AF_INET;
     server.sin_port = htons(8888);
  
-    
     //Create socket
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1)

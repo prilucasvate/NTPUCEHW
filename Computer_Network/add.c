@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
  
+ //this is bonus part
+ 
 int intp[100]={0};
 int j,oj,bestl=10000;
 int ans[100];
