@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+ 
 int intp[100]={0};
 int j,oj,bestl=10000;
 int ans[100];
