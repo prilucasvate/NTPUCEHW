@@ -1,0 +1,8 @@
+squares = [x**2 for x in range(10)]
+print(squares)
+[(X, Y) FOR X IN [1,2,3] FOR Y IN [3,1,4] IF X != Y]
+
+sentence = "The fox jumps over the dog."
+words = sentence.split()
+WORDSLEN = [LEN(X) FOR X IN WORDS IF X!="THE"]
+PRINT(WORDSLEN)
