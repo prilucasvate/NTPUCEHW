@@ -82,19 +82,20 @@ void sortByCount(CharInfo charInfo[]) {
 }
 
 void printResult(CharInfo charInfo[], int totalCharacters) {
-    (void)totalCharacters; /* 目前未使用，但保留參數以符合原型 */
+    (void)totalCharacters; 
     for (int i = 0; i < TOTAL_UNICODE_NUM; i++) {
         if (charInfo[i].count > 0) {
             if (charInfo[i].character == L'\n') {
-                printf("'\\n',%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
+                printf("\"\\n\",%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
             } else if (charInfo[i].character == L'\r') {
-                printf("'\\r',%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
-            } else if (charInfo[i].character == L',') {
-                printf("\"%lc\",%d,%.15f\n", charInfo[i].character, charInfo[i].count, charInfo[i].probability);
-            } else if (charInfo[i].character == L'\t') {
-                printf("'\\t',%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
+                printf("\"\\r\",%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
+            } //else if (charInfo[i].character == L',') {
+               // printf("\",\",%d,%.15f\n", charInfo[i].character, charInfo[i].count, charInfo[i].probability);
+            //} 
+            else if (charInfo[i].character == L'\t') {
+                printf("\"\\t\",%d,%.15f\n", charInfo[i].count, charInfo[i].probability);
             } else {
-                printf("'%lc',%d,%.15f\n", charInfo[i].character, charInfo[i].count, charInfo[i].probability);
+                printf("\"%lc\",%d,%.15f\n", charInfo[i].character, charInfo[i].count, charInfo[i].probability);
             }
         }
     }
