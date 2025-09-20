@@ -54,6 +54,7 @@ static void csv_char(const unsigned char *s,int len){
     for(int i=0;i<len;i++){
         if (s[i] == '"') {
             fputc('"', stdout);
+            fputc('"', stdout);
         }else {
             fputc(s[i],stdout); // output symbol
         }
