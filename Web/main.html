@@ -1,1 +1,46 @@
---
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的個人網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        nav {
+            width: 180px;
+            background-color:rgb(216, 119, 0);
+            text-align: center;
+            padding-top: 40px;
+            border-right: 1px solid #ccc;
+        }
+        nav a {
+            display: block;
+            margin: 20px 0;
+            color: #1778d8;
+            font-size: 20px;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" target="content" style="font-weight: bold;font-size: 25px;">自我介紹</a>
+            <a href="class.html" target="content" style="font-weight: bold;font-size: 25px;">功課表</a>
+            <a href="form.html" target="content" style="font-weight: bold;font-size: 25px;">意見反映</a>
+        </nav>
+
+        <iframe name="content" src="index.html"></iframe>
+    </div>
+</body>
+</html>
