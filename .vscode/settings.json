@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "format": "c",
-        "xiosbase": "c",
-        "xlocale": "c",
-        "xutility": "c",
-        "cmath": "c"
-    }
-}
