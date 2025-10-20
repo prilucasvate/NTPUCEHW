@@ -1,0 +1,27 @@
+/* 導覽列按鈕（手機版） */
+nav a {
+  display: block;                     /* 手機多半直向堆疊 */
+  width: 100%;                        /* 滿版好點擊；也可改成固定寬 */
+  max-width: 300px;                   /* 給個上限避免超寬 */
+  height: 48px;                       /* 手機上可做大一點好點擊 */
+  line-height: 48px;
+  margin: 10px auto;                  /* 置中堆疊 */
+  text-align: center;
+  background-image: url('btn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #8a94c9;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+  background-image: url('btn_hover.png');
+  outline: none;
+}
+
+nav a:active {
+  filter: brightness(0.95);
+}

@@ -2,36 +2,47 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>自我介紹</title>
+    <title>我的個人網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        nav {
+            width: 280px;
+            background-color:rgb(216, 119, 0);
+            text-align: center;
+            padding-top: 40px;
+            border-right: 1px solid #ccc;
+        }
+        nav a {
+            display: block;
+            margin: 20px 0;
+            color: #1778d8;
+            font-size: 20px;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+        }
+    </style>
+    <link rel="stylesheet" href="computer.css" media="screen and (min-width: 581px)">
+    <link rel="stylesheet" href="smartphone.css" media="screen and (max-width: 580px)">
 </head>
 
-<body style="background-color: #ff980336; text-align: center; font-family: Arial, sans-serif;">
+<body>
+    <div class="container">
+        <nav>
+            <a href="oldindex.html" target="content" style="font-weight: bold;font-size: 25px;">自我介紹</a>
+            <a href="class.html" target="content" style="font-weight: bold;font-size: 25px;">功課表</a>
+            <a href="form.html" target="content" style="font-weight: bold;font-size: 25px;">意見反映</a>
+        </nav>
 
-    <h1 style="color: #2e8b57; font-size: 44px;">嗨！我是林羽航</h1>
-
-    <p style="color: #333333; font-size: 34px;">
-        目前就讀台北大學通訊工程學系大三，擅長程式、喜歡看電影、吃東西和桌球。<br>
-    </p>
-
-    <img src="https://waligach.club/static/random.png" alt="照片" width="400">
-
-    <p style="color: #a73500; font-size: 34px; ">
-        <strong>
-        這是我最喜歡的網站 
-        <a href="https://waligach.club/" target="_blank" style="color: #0c7cec;">抽!!!</a><br>
-        拜託大家去用看看！!
-        </strong>
-    </p>
-
-    <h2 style="color: #000000;">我的經歷</h2>
-    <ul style="text-align: left; display: inline-block; color: #444; font-size: 20px;">
-        <li>國立台南二中</li>
-        <li>台北大學通訊系</li>
-        <li>語音暨多媒體訊號處理實驗室</li>
-    </ul>
-    <p>
-        <a href="class.html" style="color: #0063c5; font-size: 20px;">查看我的一週課表</a>
-    </p>
-
+        <iframe name="content" src="oldindex.html"></iframe>
+    </div>
 </body>
 </html>

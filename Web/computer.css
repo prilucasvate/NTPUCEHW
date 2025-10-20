@@ -1,0 +1,23 @@
+nav a {
+  display: inline-block;            
+  width: 250px;                       /* 依寬度 */
+  height: 62px;                       /* 高度 */
+  line-height: 55px;                  
+  background-image: url('btn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;         
+  color: #8a94c9;                       
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+  background-image: url('btn_hover.png');
+  outline: none;
+}
+
+nav a:active {
+  filter: brightness(0.95);
+}
