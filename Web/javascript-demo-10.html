@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<script>
+function checkdata()
+{
+  if (document.myform.userid.value == "")
+  {
+    alert("請輸入帳號")
+    return false 
+  }
+
+  if (document.myform.userpwd.value == "")
+  {
+    alert("請輸入密碼")
+    return false 
+  }
+  
+  if(document.myform.useridno.value.length != 10)
+  {
+    alert("身分證字號長度錯誤")
+    return false 
+  }
+  if(document.myform.useridno.value.charAt(0)<'A' || document.myform.useridno.value.charAt(0)>'Z')
+  {
+    alert("身分證字號第一碼必須為大寫英文字母")
+    return false 
+  }
+  if(document.myform.useridno.value.charAt(1)!='1' && document.myform.useridno.value.charAt(1)!='2')
+  {
+    alert("身分證字號第二碼必須為1或2")
+    return false 
+  }
+  if(isNaN(document.myform.useridno.value.substring(2,10)))
+  {
+    alert("身分證字號後八碼必須為數字")
+    return false 
+  }
+
+  if (!document.myform.gender[0].checked && !document.myform.gender[1].checked) 
+  {
+    alert("請點選性別")
+    return false 
+  }
+
+  if (document.myform.year.value == "none")
+  {
+    alert("請選擇年級")
+    return false 
+  }
+
+  if (!document.myform.hobby[0].checked && !document.myform.hobby[1].checked && !document.myform.hobby[2].checked && !document.myform.hobby[3].checked && !document.myform.hobby[4].checked) 
+  {
+    alert("請點選嗜好")
+    return false 
+  }
+
+  if (document.myform.comment.value == "")
+  {
+    alert("請輸入您的意見")
+    return false 
+  }
+
+}
+</script>
+</HEAD>
+
+<BODY>
+<FORM NAME="myform" METHOD="POST" ACTION="http://www.shiulihuang.idv.tw/utfdata.jsp" onSubmit="return checkdata()">
+<pre>
+帳號：<INPUT TYPE="TEXT" NAME="userid">
+密碼：<INPUT TYPE="PASSWORD" NAME="userpwd">
+身分證字號：<INPUT TYPE="TEXT" NAME="useridno">
+性別：男 <INPUT TYPE="RADIO" NAME="gender" VALUE="boy">  女 <INPUT TYPE="RADIO" NAME="gender" VALUE="girl">
+年級：<SELECT NAME="year">
+<OPTION VALUE="none">請選擇
+<OPTION VALUE="year1">一年級
+<OPTION VALUE="year2">二年級
+<OPTION VALUE="year3">三年級
+<OPTION VALUE="year4">四年級
+</SELECT>
+
+嗜好：
+<INPUT TYPE="CHECKBOX" NAME="hobby" VALUE="movie">看電影
+<INPUT TYPE="CHECKBOX" NAME="hobby" VALUE="TV">看電視
+<INPUT TYPE="CHECKBOX" NAME="hobby" VALUE="book">讀書
+<INPUT TYPE="CHECKBOX" NAME="hobby" VALUE="Internet">上網
+<INPUT TYPE="CHECKBOX" NAME="hobby" VALUE="sport">運動
+
+您的意見：
+<TEXTAREA NAME="comment" COLS="20" ROWS="3"></TEXTAREA>
+
+<INPUT TYPE="SUBMIT" VALUE="送出資料"> <INPUT TYPE="RESET" VALUE="重新填寫">
+
+</pre>
+</FORM>
+
+</BODY> 

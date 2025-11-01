@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function myFunction() {
+    const today = new Date();
+    const rocYear = today.getFullYear() - 1911; // 民國年 = 西元年 - 1911
+    const month = today.getMonth() + 1;         // 月份從 0 開始，所以要 +1
+    const date = today.getDate();
+
+    const rocDate = `民國 ${rocYear} 年 ${month} 月 ${date} 日`;
+    document.getElementById("demo").innerHTML = rocDate;
+}
+</script>
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>按下按鈕顯示今天的中華民國日期。</p>
+
+<button type="button" onclick="myFunction()">顯示日期</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
