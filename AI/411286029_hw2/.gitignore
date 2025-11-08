@@ -2,6 +2,11 @@
 
 !requirements.txt
 
+!myresults/classification_results.csv
+!myresults/summarization_comparison.txt
+!myresults/performance_metrics.json
+!myresults/tfidf_similarity_matrix.png
+!myresults/ai_similarity_matrix.png
 !results/classification_results.csv
 !results/summarization_comparison.txt
 !results/performance_metrics.json
