@@ -1,0 +1,9 @@
+﻿method,text,sentiment,topic
+Traditional (Rule-Based),這家餐廳的牛肉麵真的太好吃了，湯頭濃郁，麵條Q彈，下次一定再來！,正面,美食
+Traditional (Rule-Based),最新的AI技術突破讓人驚豔，深度學習模型的表現越來越好,正面,科技
+Traditional (Rule-Based),這部電影劇情空洞，演技糟糕，完全是浪費時間,負面,娛樂
+Traditional (Rule-Based),每天慢跑5公里，配合適當的重訓，體能進步很多,正面,運動
+Modern (AI GPT-4o),這家餐廳的牛肉麵真的太好吃了，湯頭濃郁，麵條Q彈，下次一定再來！,正面,美食
+Modern (AI GPT-4o),最新的AI技術突破讓人驚豔，深度學習模型的表現越來越好,正面,科技
+Modern (AI GPT-4o),這部電影劇情空洞，演技糟糕，完全是浪費時間,負面,娛樂
+Modern (AI GPT-4o),每天慢跑5公里，配合適當的重訓，體能進步很多,正面,運動

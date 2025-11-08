@@ -1,1 +1,9 @@
 .env
+
+!requirements.txt
+
+!results/classification_results.csv
+!results/summarization_comparison.txt
+!results/performance_metrics.json
+!results/tfidf_similarity_matrix.png
+!results/ai_similarity_matrix.png
