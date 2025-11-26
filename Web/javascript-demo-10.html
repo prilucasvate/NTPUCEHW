@@ -15,7 +15,12 @@ function checkdata()
     alert("請輸入密碼")
     return false 
   }
-  
+
+  if (document.myform.useridno.value == "")
+  {
+    alert("請輸入身分證字號")
+    return false 
+  }
   if(document.myform.useridno.value.length != 10)
   {
     alert("身分證字號長度錯誤")

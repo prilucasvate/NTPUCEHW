@@ -43,9 +43,9 @@ pip3 install -r requirements.txt
 
 **設定 API 金鑰**
 
-本專案需要 OpenAI API key才能執行 Part B (AI 方法) 。
-在本專案的根目錄 (411286029_hw2/) 建立一個名為 .env 的檔案。
-在 .env 檔案中加入以下內容 (換成你自己的 API Key)：
+本專案需要 OpenAI API key才能執行 Part B (AI 方法) 。  
+在本專案的根目錄 (411286029_hw2/) 建立一個名為 .env 的檔案。  
+在 .env 檔案中加入以下內容 (換成你自己的 API Key)：  
 ```
 OPENAI_API_KEY="sk-YourApiKey"
 ```
@@ -65,7 +65,7 @@ python3 comparison.py
 相關數據存於 : results/
 
 ## 其他說明
-可單獨執行、但會覆蓋 results/ 結果 :
-traditional_methods.py 為 Part A 實作
-modern_methods.py  為 Part B 實作
-comparison.py 為Part C 比較程式 會呼叫 Part A、B 方法
+可單獨執行、但會覆蓋 results/ 結果 :  
+traditional_methods.py 為 Part A 實作  
+modern_methods.py  為 Part B 實作  
+comparison.py 為Part C 比較程式 會呼叫 Part A、B 方法  
