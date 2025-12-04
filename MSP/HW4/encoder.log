@@ -1,0 +1,26 @@
+2025-12-04 22:44:58 [INFO] encoder: starting encoding process ...
+2025-12-04 22:44:58 [INFO] encoder: files opened successfully.
+2025-12-04 22:44:58 [INFO] encoder: starting symbol statistics ...
+2025-12-04 22:44:58 [INFO] encoder: symbol statistics complete. Total symbols: 272, Total count: 3868122
+2025-12-04 22:44:58 [INFO] encoder: starting building Huffman Tree ...
+2025-12-04 22:44:58 [INFO] encoder: starting generating Huffman codes ...
+2025-12-04 22:44:58 [INFO] encoder: starting writing codebook to codebook.csv ...
+2025-12-04 22:44:58 [INFO] encoder: codebook writing complete.
+2025-12-04 22:44:58 [INFO] encoder: starting encoding input file ...
+2025-12-04 22:44:58 [INFO] encoder: encoding input file complete.
+2025-12-04 22:44:58 [INFO] encoder: writing EOF code and flushing buffer ...
+2025-12-04 22:44:58 [INFO] encoder: encoding complete. Output saved to encoded.bin
+2025-12-04 22:44:58 [INFO] encoder: ========= Statistics =========
+2025-12-04 22:44:58 [INFO] encoder: num_symbols=3868122
+2025-12-04 22:44:58 [INFO] encoder: unique_symbols=98
+2025-12-04 22:44:58 [INFO] encoder: fixed_code_bits_per_symbol=7
+2025-12-04 22:44:58 [INFO] encoder: entropy_bits_per_symbol=4.3041
+2025-12-04 22:44:58 [INFO] encoder: perplexity=19.75
+2025-12-04 22:44:58 [INFO] encoder: huffman_bits_per_symbol=4.3348
+2025-12-04 22:44:58 [INFO] encoder: total_bits_fixed=27076854
+2025-12-04 22:44:58 [INFO] encoder: total_bits_huffman=16767343
+2025-12-04 22:44:58 [INFO] encoder: compression_ratio=1.61
+2025-12-04 22:44:58 [INFO] encoder: compression_factor=0.6193
+2025-12-04 22:44:58 [INFO] encoder: saving_percentage=0.3807
+2025-12-04 22:44:58 [INFO] encoder: ============================
+2025-12-04 22:44:58 [INFO] encoder: finish all tasks.
