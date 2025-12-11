@@ -29,7 +29,7 @@
 4. pull-> fix -> add -> commit -> push
 
 ## Division of work
-### 林羽航
+### wali
 * project management
 * main algorithm
 * quality assurance
