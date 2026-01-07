@@ -1,0 +1,12 @@
+# 1. ignore all files
+*
+# 2. include all directories
+!*/
+# 3. include all files with extensions
+!*.*
+
+*.pdf
+*.png
+*.txt
+*.wav
+!Makefile

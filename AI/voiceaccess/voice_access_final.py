@@ -12,7 +12,7 @@ import time
 import shutil
 import random
 import difflib
-from typing import Dict, List
+from typing import Dict
 from pathlib import Path
 
 import torch
@@ -198,7 +198,7 @@ def enroll_user(rec, db):
     for i in range(3):
         print(f"\n--- 第 {i+1}/3 段 ---")
         line = SUGGEST_LINES_ENROLL[i % len(SUGGEST_LINES_ENROLL)]
-        print(f"請唸出 ： 「{line}」")
+        print(f"請唸出 : 「{line}」")
         
         try:
             # 註冊時固定錄 5 秒，並手動 Enter
@@ -206,7 +206,7 @@ def enroll_user(rec, db):
             # 註冊也要切除靜音，建立更純淨的模型
             wav = trim_silence(wav) 
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error : {e}")
             continue
         
         embs.append(embed(rec, wav))
@@ -226,7 +226,7 @@ def verify_user(rec, asr_model, db, threshold):
 
     challenge_text = random.choice(CHALLENGE_SENTENCES)
     
-    # [優化 1] 動態計算錄音時間
+    # 動態計算錄音時間
     # 每個字給 0.3 秒，加上 0.5 秒緩衝 (反應時間 + 尾音)
     # 最短不小於 2 秒，最長不超過 8 秒
     calc_duration = len(challenge_text) * 0.3 + 0.5

@@ -1,0 +1,15 @@
+{
+    "similarity": {
+        "traditional_time_sec": 0.0006011233999743126,
+        "ai_time_sec": 7.328628059200128,
+        "ai_cost_usd": 0.0033250000000000003
+    },
+    "classification": {
+        "traditional_time_sec": 0.0013165632000891492,
+        "ai_time_sec": 4.054883760399752
+    },
+    "summarization": {
+        "traditional_time_sec": 0.011377700999582884,
+        "ai_time_sec": 3.694350310200389
+    }
+}
