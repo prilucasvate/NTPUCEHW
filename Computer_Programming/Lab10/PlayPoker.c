@@ -39,11 +39,11 @@ int main()
                     printf("Deal card!!\n");
                     Deal1Card(cards,&position,&card);
                     struct Card dCard=MapCard(card);
-                    printf("The dealer's card is %d(%d)\n",card,Face(card));
+                    printf("The dealer's card is %d(%d%c)\n",card,Face(card),dCard.suit);
                     //-----------------------------
                     Deal1Card(cards,&position,&card);
                     struct Card pCard=MapCard(card);
-                    printf("The player's card is %d(%d)\n",card,Face(card));
+                    printf("The player's card is %d(%d%c)\n",card,Face(card),pCard.suit);
                     printf("%d cards left!!!!!!!\n\n",52-(position));
                     //---------------------------------------------
                     
